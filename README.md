@@ -32,7 +32,7 @@ The recommended way to use this script is to set it up as a system service. This
 Description=Bind9 Log Monitor
 
 [Service]
-ExecStart=/usr/bin/python3 /path/to/your/script.py
+ExecStart=/usr/bin/python3 /path/to/your/bind9_monitor.py
 Restart=always
 User=yourusername
 Group=yourgroup
