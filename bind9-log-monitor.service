@@ -1,0 +1,12 @@
+[Unit]
+Description=Bind9 Log Monitor
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/your/script.py
+Restart=always
+User=yourusername
+Group=yourgroup
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
