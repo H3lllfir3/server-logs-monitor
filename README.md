@@ -42,7 +42,7 @@ Environment=PYTHONUNBUFFERED=1
 WantedBy=multi-user.target
 ```
 
-Replace `/path/to/your/script.py` with the actual path to your Python script, and replace `yourusername` and `yourgroup` with your system's username and group (you can get these by running `whoami` and `id -gn` commands in the terminal).
+Replace `/path/to/your/bind9_monitor.py` with the actual path to your Python script, and replace `yourusername` and `yourgroup` with your system's username and group (you can get these by running `whoami` and `id -gn` commands in the terminal).
 
 2. Save the service file to `/etc/systemd/system/`, for example, at `/etc/systemd/system/bind9-log-monitor.service`.
 
