@@ -25,8 +25,8 @@ class LogHandler(FileSystemEventHandler):
 
 if __name__ == "__main__":
     filename = '/var/log/named/named.log'
-    domain = 'put your kiri domain here'
-    webhook = 'put your kiri webhook here'
+    domain = 'PUT YOU DOMAIN HERE'
+    webhook = 'DISCORD WEBHOOK URL'
 
     event_handler = LogHandler(filename, domain, webhook)
     observer = Observer()

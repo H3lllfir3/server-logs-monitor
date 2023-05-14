@@ -27,7 +27,7 @@ class LogHandler(FileSystemEventHandler):
                         log_datetime = log_datetime.replace(year=current_year)
                         log_datetime = log_datetime.astimezone(pytz.timezone('Asia/Tehran'))
                         formatted_datetime = log_datetime.strftime('%Y-%m-%d %H:%M:%S')
-                        message = f'New SSH connection at {formatted_datetime}: User {username} logged in from {ip_address}'
+                        message = f'```js\nNew SSH connection at {formatted_datetime}: User {username} logged in from {ip_address}```'
                         data = {"content": message}
                         requests.post(self.webhook, data=data)
 
